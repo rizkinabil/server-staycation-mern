@@ -5,7 +5,11 @@
       <% for(let x = 0; x < item.imageId.length; x++){ %>
       <div class="col-md-4" style="margin: auto">
         <div class="card-body">
-          <img src="https://server-staycation-mern.herokuapp.com<%= item.imageId[x].imageUrl %>" alt="imageUrl" style="width: 100%; display: block" />
+          <img
+            src="https://server-staycation-mern.herokuapp.com/<%= item.imageId[x].imageUrl %>"
+            alt="imageUrl"
+            style="width: 100%; display: block"
+          />
         </div>
       </div>
       <% } %>
