@@ -1,7 +1,7 @@
 var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
 
-const db = 'mongodb://localhost:27017/db-staycation';
+const db = 'mongodb+srv://rizkinabil:bwamern@cluster0.drr9z.mongodb.net/db-staycation?retryWrites=true&w=majority';
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
