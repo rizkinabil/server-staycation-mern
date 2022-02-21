@@ -19,9 +19,6 @@ mongoose
   )
   .catch((error) => handleError(error));
 
-// cors setup
-app.use(cors());
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -30,6 +27,9 @@ const adminRouter = require('./routes/admin');
 const apiRouter = require('./routes/api');
 
 var app = express();
+
+// cors setup
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
